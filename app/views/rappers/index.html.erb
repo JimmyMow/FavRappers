@@ -1,0 +1,14 @@
+<h1>Rappers</h1>
+
+<%= link_to "Add a rapper", new_rapper_url %>
+
+<ul>
+<% @rappers.each do |rapper| %>
+<li><%= link_to rapper.name, rapper_url(rapper.id) %>
+<%= link_to "Edit", edit_rapper_url(rapper.id)   %>
+<%= link_to "Delete", rapper_url(rapper.id), method: 'delete'   %>
+</li>
+<% end %>
+</ul>
+
+

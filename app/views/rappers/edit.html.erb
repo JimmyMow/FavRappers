@@ -1,0 +1,17 @@
+<h1>Edit #rapper.name</h1>
+
+<%= form_tag rapper_url, method: 'patch' %>
+
+<%= label_tag 'name' %>
+<%= text_field_tag 'name', @rapper.name %>
+
+<%= label_tag 'group' %>
+<%= text_field_tag 'group', @rapper.group %>
+
+<%= label_tag 'song' %>
+<%= text_field_tag 'song', @rapper.song %>
+
+<%= label_tag 'url' %>
+<%= text_field_tag 'url', @rapper.url %>
+
+<%= submit_tag 'Update' %>

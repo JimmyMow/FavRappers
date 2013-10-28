@@ -1,0 +1,13 @@
+<nav id='rapper_details'>
+  <ul>
+    <li><h1 id='rapper_details_name'><%= @rapper.name %></h1></li>
+  </ul>
+</nav>
+   <div style="background: url('<%= @rapper.url %>') no-repeat fixed; background-size: 100%; height: 900px;">
+      <div class='context'>
+    <h3>Group:</h3>
+      <p><%= @rapper.group %></p>
+      <h3>Song:</h3>
+    <p><%= @rapper.song %></p>
+  </div>
+</div>
